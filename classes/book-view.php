@@ -4,11 +4,10 @@
 
 class BookView {
 
-    public function renderAllBooksAsList(array $books):void {
-        echo "<ul>";
-        foreach($books as $book){
-            echo "<li>{$book['title']} , av: {$book['author']} , Utgivningsår: {$book['year']} ({$book['pages']} sidor)</li>";
-        }
-        echo "</ul>";
+    public function renderBook($book):void {
+        echo "<p>{$book['title']}, av: {$book['author']}, Utgivningsår: {$book['year']}, Om: {$book['blurb']}, ({$book['pages']} sidor)</p>";
     }
+
 }
+
+//funktion för id?

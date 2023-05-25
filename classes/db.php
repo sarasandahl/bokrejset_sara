@@ -18,4 +18,13 @@ class DB {
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public function getBook($id)
+    {
+        $query = "SELECT id FROM books WHERE $id == id";
+        $stmt = $this->pdo->prepare($query);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+    
+
 }

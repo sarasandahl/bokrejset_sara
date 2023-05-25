@@ -8,7 +8,14 @@ class BookModel extends DB {
 
     protected $table = "books";
 
-    public function getAllBooks(){
+    public function getAllBooks() {
         return $this->getAll($this->table);
     }
+
+    public function getBook($id) {
+        $books = $this->getAll($this->table);
+        $result = array_filter($books, fn($b) => intval($b['id']) == $id);
+        return array_merge(...$result);
+    }
+
 }
