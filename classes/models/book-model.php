@@ -12,6 +12,7 @@ class BookModel extends DB {
         return $this->getAll($this->table);
     }
 
+    //ska den vara häR? eller gör man en ny sql-fråga i db?
     public function getBook($id) {
         $books = $this->getAll($this->table);
         $result = array_filter($books, fn($b) => intval($b['id']) == $id);

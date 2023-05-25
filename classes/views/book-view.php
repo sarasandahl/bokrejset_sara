@@ -9,5 +9,3 @@ class BookView {
     }
 
 }
-
-//funktion för id?
