@@ -1,9 +1,9 @@
 <?php
 
-require 'classes/books-view.php';
+require 'classes/views/books-view.php';
 
 require 'classes/db.php';
-require 'classes/book-model.php';
+require 'classes/models/book-model.php';
 
 $pdo = require 'partials/connect.php';
 

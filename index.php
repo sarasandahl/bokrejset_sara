@@ -1,11 +1,11 @@
 <?php
 
-require 'classes/user-view.php';
+require 'classes/views/user-view.php';
 // book-view
 // review-view
 
 require 'classes/db.php';
-require 'classes/user-model.php';
+require 'classes/models/user-model.php';
 // book dvs id, title, author
 // review (innan userbook) dvs id, user_id, book_id, review_text, pages
 
