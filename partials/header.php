@@ -9,3 +9,6 @@
 </head>
 <body>
     <h1>BokRejset</h1>
+
+<?php
+    include 'partials/nav.php';

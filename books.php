@@ -7,7 +7,7 @@ require 'classes/models/book-model.php';
 
 $pdo = require 'partials/connect.php';
 
-$db = new DB($pdo);
+$db = new DB($pdo); //ska den vara här?
 $bookModel = new BookModel($pdo);
 $booksView = new BooksView();
 
@@ -15,7 +15,6 @@ $booksView = new BooksView();
 // Skapa vy nedan
 
 include 'partials/header.php';
-include 'partials/nav.php';
 
 // våran apps vyer här om books-tabellen!
 $booksView->renderAllBooksAsList($bookModel->getAllBooks());

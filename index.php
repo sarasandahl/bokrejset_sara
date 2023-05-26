@@ -11,7 +11,7 @@ require 'classes/models/user-model.php';
 
 $pdo = require 'partials/connect.php';
 
-$db = new DB($pdo);
+$db = new DB($pdo);//ska den vara här?
 $userModel = new UserModel($pdo);
 $userView = new UserView();
 
@@ -19,7 +19,6 @@ $userView = new UserView();
 // Skapa vy nedan
 
 include 'partials/header.php';
-include 'partials/nav.php';
 
 // våran apps vyer här
 ?>
